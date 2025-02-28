@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: spring-boot-pinpoint
+  profiles:
+    active: local
+
+---
+spring:
+  config:
+    activate:
+      on-profile: local
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password: sa
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+decorator:
+  datasource:
+    p6spy:
+      enable-logging: true # ????? ?? false? ????? ?.
