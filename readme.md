@@ -13,7 +13,7 @@
 
 ## 목차 
 - [pinpoint 환경설정 (Only ServerMap)](#pinpoint-환경설정-only-servermap)
-- [참고자료](#참고자료)
+- [참고자료](#참고 자료)
 ---
 
 ## pinpoint 환경설정 (Only ServerMap)
