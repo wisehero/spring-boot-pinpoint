@@ -71,4 +71,9 @@ public class ExampleController {
 		@RequestBody ExampleRequestBody exampleRequestBody) {
 		exampleService.requestBodyWithPathVariableInService(id, exampleRequestBody);
 	}
+
+	@GetMapping("/exception")
+	public void exception() {
+
+	}
 }
