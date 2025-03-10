@@ -11,9 +11,11 @@
         - ubuntu 22.04
         - jdk 8, jdk 11
 
-## 목차 
+## 목차
+
 - [pinpoint 환경설정 (Only ServerMap)](#pinpoint-환경설정-only-servermap)
 - [참고자료](#참고 자료)
+
 ---
 
 ## pinpoint 환경설정 (Only ServerMap)
@@ -102,14 +104,19 @@ java -javaagent:/home/ubuntu/pinpoint-agent-3.0.1/pinpoint-bootstrap-3.0.1.jar \
 
 ### 참고 자료
 
-- https://incheol-jung.gitbook.io/docs/q-and-a/infra/feat
+- https://pinpoint-apm.gitbook.io/pinpoint
+-
+- 핀포인트 사용시 주의사항!! (feat 로그 파일 사이즈)
+    - https://incheol-jung.gitbook.io/docs/q-and-a/infra/feat
 
 ---
 
 ## 남은 과제
 
 - 나머지 기능은 어떻게 작동 시킬까?
-  - 현재는 ServerMap만 사용 가능한 상태다.
-  - v3를 기준으로 New Inspector, System Metric, URI 
+    - 현재는 ServerMap만 사용 가능한 상태다.
+    - v3를 기준으로 New Inspector, System Metric, URI
 - 계속해서 HBase에 데이터가 적재된다면, 디스크에 문제가 생길 것이다. 이는 어떻게 해결할까?
+    - 조사한 바로는 크게 기본 설정을 건드릴 필요가 없다고 했다.
+    - HBASE에 초기에 설정되어 있는 TTL로도 충분하다고 한다.
 
