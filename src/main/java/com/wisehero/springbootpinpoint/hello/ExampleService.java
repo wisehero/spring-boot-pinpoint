@@ -67,4 +67,8 @@ public class ExampleService {
 		entity.updateEntity(exampleRequestBody);
 		exampleRepository.save(entity);
 	}
+
+	public void exception() {
+		throw new RuntimeException("exception");
+	}
 }
